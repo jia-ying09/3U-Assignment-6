@@ -41,9 +41,6 @@ public class A6Q1 {
              sum = sum + marks[i];
         }
 
-             //leave a blank line
-             System.out.println(" "); 
-
              //finding the average
             double average = (sum / students);
 
