@@ -15,7 +15,7 @@ public class A6Q2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       // add scanner
+       // insert scanner
         Scanner input = new Scanner(System.in);
 
         //ask the user how many people are in the group
@@ -27,11 +27,12 @@ public class A6Q2 {
         //ask the user to enter the heights
         System.out.println("Enter the heights of each individual in centimetres: ");
 
-        
+        //create a list with the number of people in the group
         double[] height = new double[people];
 
         //loop for inputting the marks
         for (int i = 0; i < height.length; i++) {
+            //inputting the marks
             height[i] = input.nextDouble();
         }
 
@@ -40,7 +41,6 @@ public class A6Q2 {
         for (int i = 0; i < height.length; i++) {
              sum = sum + height[i];
         }
-
 
              //finding the average
             double average = (sum / people);

@@ -25,7 +25,7 @@ public class A6Q1 {
         int students = input.nextInt();
 
         //ask the user to enter the marks are
-        System.out.println("Enter the marks: ");
+        System.out.println("Enter the marksin percentage: ");
 
         //input the percentage of marks there are per student
         double[] marks = new double[students];
