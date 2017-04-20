@@ -25,7 +25,7 @@ public class A6Q1 {
         int students = input.nextInt();
 
         //ask the user to enter the marks are
-        System.out.println("Enter the marksin percentage: ");
+        System.out.println("Enter the marks in percentage: ");
 
         //input the percentage of marks there are per student
         double[] marks = new double[students];
@@ -43,7 +43,7 @@ public class A6Q1 {
 
              //finding the average
             double average = (sum / students);
-
+            average = Math.round(average*100)/100;
             //outputting the class average
             System.out.println("The class average is " + average + " %");
 
