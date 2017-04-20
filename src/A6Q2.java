@@ -41,12 +41,19 @@ public class A6Q2 {
         for (int i = 0; i < height.length; i++) {
              sum = sum + height[i];
         }
-
+           
              //finding the average
             double average = (sum / people);
 
             //outputting the class average
             System.out.println("The average height in the group is " + average + " cm.");
-
+            
+            //finding people who are above average height
+             for (int i = 0; i < height.length; i++) {
+            if (height[i] > sum); 
+            double above = height[i++];
+            Math.max(i, i);
+            System.out.println("People who are above average height are " + above);
+             }
         }
     }
