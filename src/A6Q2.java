@@ -15,7 +15,7 @@ public class A6Q2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       // insert scanner
+        // insert scanner
         Scanner input = new Scanner(System.in);
 
         //ask the user how many people are in the group
@@ -39,21 +39,18 @@ public class A6Q2 {
         //getting the sum of the heights
         double sum = 0;
         for (int i = 0; i < height.length; i++) {
-             sum = sum + height[i];
+            sum = sum + height[i];
         }
-           
-             //finding the average
-            double average = (sum / people);
 
-            //outputting the class average
-            System.out.println("The average height in the group is " + average + " cm.");
-            
-            //finding people who are above average height
-             for (int i = 0; i < height.length; i++) {
-            if (height[i] > sum); 
-            double above = height[i++];
-            Math.max(i, i);
-            System.out.println("People who are above average height are " + above);
-             }
+        //finding the average
+        double average = (sum / people);
+   //????????  average = Math.random();
+        //outputting the class average
+        System.out.println("The average height in the group is " + average + " cm.");
+
+        //finding people who are above average height
+        for (double peeps : height) {
+            System.out.println("People who are above average height are " + peeps);
         }
     }
+}
