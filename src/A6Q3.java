@@ -34,20 +34,22 @@ public class A6Q3 {
             //make a temporary integer for number 1
             int temp1 = numbers[1];
             //make a temporary integer for number 0
-            int temp = numbers[0];           
+            int temp = numbers[0];          
+            
             //switch the places of array 1
             numbers[1] = temp;
             //switch the places of array 0
             numbers[0] = temp1;
+            
             //output the numbers in ascending order
-            System.out.println(numbers[1] + " " + numbers[0]);
+            System.out.println(numbers[1] + ", " + numbers[0]);
 
         } else {
 
             //put the numbers in order if array 0 is greater         
             if (numbers[1] < numbers[0]) {
                 //output the numbers in ascending order
-                System.out.println(numbers[1] + " " + numbers[0]);
+                System.out.println(numbers[1] + ", " + numbers[0]);
 
             } else {
 

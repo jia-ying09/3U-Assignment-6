@@ -36,6 +36,7 @@ public class A6Q2 {
             height[i] = input.nextDouble();
         }
 
+
         //getting the sum of the heights
         double sum = 0;
         for (int i = 0; i < height.length; i++) {
@@ -44,13 +45,19 @@ public class A6Q2 {
 
         //finding the average
         double average = (sum / people);
-   //????????  average = Math.random();
+
         //outputting the class average
         System.out.println("The average height in the group is " + average + " cm.");
+        for (int i = 0; i < height.length; i++) {
+            for (int j = 1; j < height.length - 1; i++) {
+                double above =
+                        height[j];
+                {
 
-        //finding people who are above average height
-        for (double peeps : height) {
-            System.out.println("People who are above average height are " + peeps);
+                    //finding people who are above average height
+                    System.out.println("People who are above average height are " + above);
+                }
+            }
         }
     }
 }
