@@ -30,26 +30,31 @@ public class A6Q4 {
             marks[i] = input.nextInt();
         }
 
-       int mark = marks.length;
-       int temp;
-       
-        for (int i = 0; i < mark; i++) {
-            for (int j = 1; j < (mark - i); j++) {
+        for (int i = 0; i < 10; i++) {
+            {
+                for (int j = marks.length; j < 9; j++) {
 
-                //put the numbers in order if array 1 is greater
-                if (marks[j - 1] > marks[j]) {
-                    
-                    //make a temporary integer for number 1
-                    temp = marks[j - 1];
-                    
-                    //switch the places of array 1
-                    marks[j - 1] = temp;
-                    //switch the places of array 0
-                    marks[j] = marks [j - 1];
-                    
-                    System.out.println(marks[j] + ", " + marks [j - 1]);
+                    //put the numbers in order if array 1 is greater
+                    if (marks[j] < marks[j - 1]) {
+
+                        //make a temporary integer
+                        int temp = marks[j - 1];
+                        //swapping the numbers
+                        marks[j - 1] = marks[j];
+                        //switch the places of array 1
+                        marks[j] = temp;
+                    }
                 }
             }
+            System.out.println(" ");
+
+            //order the numbers into ascending order
+            for (int n = 9; n > -9; n--) {
+
+                //output the numbers inascending order
+                System.out.print(marks[i] + ", ");
+            }
+
         }
     }
 }
