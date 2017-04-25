@@ -57,5 +57,6 @@ public class A6Q6 {
                 }
             }
         }
+        double min = marks.length - 1;
     }
 }
