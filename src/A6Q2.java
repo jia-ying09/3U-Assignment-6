@@ -45,19 +45,18 @@ public class A6Q2 {
 
         //finding the average
         double average = (sum / people);
+        average = Math.round(average * 100.0) / 100.0;
 
         //outputting the class average
         System.out.println("The average height in the group is " + average + " cm.");
-        for (int i = 0; i < height.length; i++) {
-            for (int j = 1; j < height.length - 1; i++) {
-                double above =
-                        height[j];
-                {
 
-                    //finding people who are above average height
-                    System.out.println("People who are above average height are " + above);
-                }
+        for (int i = 0; i < height.length; i++) {
+            if (height[i] > average) {
+
+                //finding people who are above average height
+                System.out.println("People who are above average height are " + height[i] + " cm.");
             }
         }
     }
 }
+

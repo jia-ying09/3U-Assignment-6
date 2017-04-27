@@ -58,7 +58,7 @@ public class A6Q4 {
         for (int i = 9; i > -1; i--) {
 
             //output the numbers inascending order
-            System.out.print(marks[i]);
+            System.out.print(marks[i] + "% ");
         }
     }
 }

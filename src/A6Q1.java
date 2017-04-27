@@ -43,10 +43,10 @@ public class A6Q1 {
 
              //finding the average
             double average = (sum / students);
-            average = Math.round(average*100)/100;           
+            average = Math.round(average * 100.0) / 100.0;           
         
             //outputting the class average
-            System.out.println("The class average is " + average + " %");
+            System.out.println("The class average is " + average + " %.");
 
         }
     }

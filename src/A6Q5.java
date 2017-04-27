@@ -65,7 +65,7 @@ public class A6Q5 {
         for (int i = (marks.length - 1); i > -1; i--) {
 
             //output the numbers inascending order
-            System.out.print(marks[i] + " ");
+            System.out.print(marks[i] + "% ");
         }
 
         //blank line
@@ -77,11 +77,8 @@ public class A6Q5 {
             //find the median of an even number
             double even = (marks[students / 2] + marks[(students / 2) - 1]) / 2;
 
-            //output the two numbers in the median
-            System.out.println("The two medians are " + marks[students / 2] + " " + marks[(students / 2) - 1]);
-
             //output the median
-            System.out.println("The class median is " + even);
+            System.out.println("The class median is " + even + "%. ");
 
         } else {
 
@@ -89,7 +86,7 @@ public class A6Q5 {
             double median = marks[students / 2];
 
             //tell the user their median
-            System.out.println("The class median is " + median + ".");
+            System.out.println("The class median is " + median + "%.");
         }
     }
 }
