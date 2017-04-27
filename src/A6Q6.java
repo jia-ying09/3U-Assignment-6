@@ -57,6 +57,38 @@ public class A6Q6 {
                 }
             }
         }
-        double min = marks.length - 1;
+         //order the numbers into ascending order
+        for (int i = (marks.length - 1); i > -1; i--) {}
+       
+        double max = marks[0];
+        //finding the highest percentage
+        for (int i = 0; i < marks.length; i++) {
+             max = marks[i];
+            //outputing the highest percentage
+        }
+            System.out.println("The highest percentage is " + max + ". You are doing an amazing job, keep up the great work!");
+        
+
+
+        //finding the lowest percentage
+        double min = 0;
+        for (int i = 0; i < marks.length; i++) {
+            min = marks[i];
+        }
+        //outputing the lowest percentage
+        System.out.println("The lowest percentage is " + min + ". Continue to work hard. ");
+
+        //average 
+        double sum = 0;
+        for (int i = 0; i < marks.length; i++) {
+            //calculating the sum
+            sum = sum + marks[i];
+        }
+        //calculating the average 
+        double average = (sum / students);
+        //outputing the average percentage
+        System.out.println("The average percentage is " + average);
+
+
     }
 }
