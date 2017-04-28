@@ -74,11 +74,8 @@ public class A6Q5 {
         //if the median is an even number
         if (students % 2 == 0) {
 
-            //find the median of an even number
-            double even = (marks[students / 2] + marks[(students / 2) - 1]) / 2;
-
             //output the median
-            System.out.println("The class median is " + even + "%. ");
+            System.out.println("The class median is " + (marks[students / 2] + marks[(students / 2) - 1]) / 2 + "%. ");
 
         } else {
 
