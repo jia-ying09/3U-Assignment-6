@@ -13,58 +13,50 @@ public class A6Q7 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-            
         //creating a ist of integers
         int[] numbers = new int[1000];
-        
         {
-            for (int i = 0; i < 1000; i++){
+
+            //output the prime numbers 2, 3, 5, 7
+            System.out.println("2");
+            System.out.println("3");
+            System.out.println("5");
+            System.out.println("7");
+
+            //loop through all the numbers from 2-1000
+            for (int i = 0; i < 1000; i++) {
                 numbers[i] = i;
-                
-               //letting p equal 2 
-                int p = 2;}
-                
-            p = p + i;
-                for (int i = 2; i < 1000; i++) 
-                    ||  for (int i = 3; i < 1000; i++){
-                  
-                
+
+                //delete 1
+                if (numbers[i] == 1) {
+                } else {
+
+                    //delete any multiples of 2
+                    if (numbers[i] % 2 == 0) {
+                    } else {
+
+                        //delete any multiples of 3
+                        if (numbers[i] % 3 == 0) {
+                        } else {
+
+                            //delete any multiples of 5
+                            if (numbers[i] % 5 == 0) {
+                            } else {
+
+                                //delete any multiples of 7
+                                if (numbers[i] % 7 == 0) {
+                                } else {
+
+                                    //print out the prime numbers
+                                    System.out.println(numbers[i]);
+                                }
+
+                            }
+                        }
+                    }
+
+                }
             }
-                
-            }
-           
         }
-        //creating a list of integers up to 1000
-       /* for (int i = 1; i > 1000; i++) {
-
-            
-            int p = 2;
-
-            //counting up in increments of p 
-            p = p + p;
-
-            //outputing the integers
-            System.out.println(p + " ");
-
-            //if i is greater than p make p equal i
-            if (i > p == true) {
-
-                //creating a temporary integer
-                int temp1 = p;
-
-                //switching i with p
-                i = temp1;
-
-                //switching p with i
-                p = i;
-
-                //outputing the numbers
-                System.out.println(p);
-
-                //if i is not greater than p stop
-            } else {
-
-                //stop
-                break; */
-            }
-
+    }
+}
